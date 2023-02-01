@@ -10,7 +10,7 @@ public class Mine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ThrowDiamond();
+        StartCoroutine("ThrowDiamond");
     }
 
     // Update is called once per frame
