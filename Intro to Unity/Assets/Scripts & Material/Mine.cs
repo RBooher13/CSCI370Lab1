@@ -20,7 +20,7 @@ public class Mine : MonoBehaviour
     }
 
     public void StopThrow() {
-        StopCoroutine("ThrowDiamond")
+        StopCoroutine("ThrowDiamond");
     }
 
     IEnumerator ThrowDiamond() {
