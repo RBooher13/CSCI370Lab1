@@ -19,6 +19,10 @@ public class Mine : MonoBehaviour
         
     }
 
+    public void StopThrow() {
+        StopCoroutine("ThrowDiamond")
+    }
+
     IEnumerator ThrowDiamond() {
         for (;;){
             Instantiate(Diamond);
