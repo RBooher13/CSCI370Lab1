@@ -7,6 +7,8 @@ public class Mine : MonoBehaviour
 
 
     public GameObject Diamond;
+    public int missed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +30,8 @@ public class Mine : MonoBehaviour
             Instantiate(Diamond);
             yield return new WaitForSeconds(Random.Range(1.5f, 3.5f));
         }
+    }
+    public void miss(){
+        missed += 1;
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
+
+    public static GameManager scores; 
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class Rocket : MonoBehaviour
         print("Collision");
         if (col.gameObject.tag == "Diamond") {
             Destroy(col.gameObject);
+            GameManager.Instance.IncScore(10);
         }
     }
 }
