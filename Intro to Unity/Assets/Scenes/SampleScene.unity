@@ -527,6 +527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mine: {fileID: 639776302}
+  rocket: {fileID: 1519798152}
   scoreText: {fileID: 1664368024}
   play: 0
 --- !u!1 &1519798152
@@ -560,6 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3cc629ae475e40eba21e58f2efd9116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObjectToMove: {fileID: 1519798152}
 --- !u!212 &1519798154
 SpriteRenderer:
   m_ObjectHideFlags: 0

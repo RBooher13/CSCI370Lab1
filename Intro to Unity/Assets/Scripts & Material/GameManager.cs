@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
     public GameObject mine;
+    public GameObject rocket;
     public TextMeshProUGUI scoreText;
     private int score;
     private int miss;
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
         if (miss > 10) {
             mine.GetComponent<Mine>().StopThrow();
             play = false;
+            rocket.GetComponent<Rocket>().launch();
         }
     }
 
